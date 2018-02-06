@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
 
+
 public class MainActivity extends FragmentActivity {
     final String frag1String = "Fragment1_ID_STRING";
     boolean showButtons = false;
@@ -36,24 +37,24 @@ public class MainActivity extends FragmentActivity {
         manager.executePendingTransactions();
     }
 
-//    @Override
-//    protected void onStart() {
-//        // TODO Auto-generated method stub
-//        super.onStart();
-//
-//        // must use fragment manager
-//        Fragment1 myFrag1 = (Fragment1) getSupportFragmentManager().findFragmentByTag(frag1String);
-//
-//        // orig transaction could have failed OR fragment UI is not completely
-//        // created
-//        if (myFrag1 != null) {
-//            View myView = myFrag1.getView();
-//            if (myView != null) {
-//                TextView myTextView = (TextView) myView.findViewById(R.id.textView1);
-//                myTextView.setText("Direct Manipulation");
-//            }
-//        }
-//    }
+    @Override
+    protected void onStart() {
+        // TODO Auto-generated method stub
+        super.onStart();
+
+        // must use fragment manager
+        Fragment1 myFrag1 = (Fragment1) getSupportFragmentManager().findFragmentByTag(frag1String);
+
+        // orig transaction could have failed OR fragment UI is not completely
+        // created
+        if (myFrag1 != null) {
+            View myView = myFrag1.getView();
+            if (myView != null) {
+                TextView myTextView = (TextView) myView.findViewById(R.id.textView1);
+                myTextView.setText("Direct Manipulation");
+            }
+        }
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
