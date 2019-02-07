@@ -78,5 +78,6 @@
     <string name="pref_ringtone_silent">Silent</string>
 
     <string name="pref_title_vibrate">Vibrate</string>
+    <string name="button_handled_by_this_fragment">Button thats handled by this fragment</string>
 
 </resources>

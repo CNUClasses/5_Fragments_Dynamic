@@ -25,4 +25,6 @@
             android:id="@+id/radioButton1"
             android:onClick="doRadio1"
             />
+
+
 </LinearLayout>
