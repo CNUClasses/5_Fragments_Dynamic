@@ -1,18 +1,15 @@
 package com.example.fragments_dynamic;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
 
-
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends AppCompatActivity {
     final String frag1String = "Fragment1_ID_STRING";
     boolean showButtons = false;
 
