@@ -12,4 +12,11 @@
         android:layout_height="wrap_content"
         android:text="Fragment 2 no radio buttons"
         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click button to open settings"
+        android:onClick="doSettings"/>
 </LinearLayout>
