@@ -18,9 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // start the fragment manager make sure you dont comingle
-        // the support library android.support.v4.app.* and
-        // the regular fragment library android.app.*
+        // start the fragment manager
         FragmentManager manager = getSupportFragmentManager();
 
         // we want a transaction
@@ -74,5 +72,8 @@ public class MainActivity extends AppCompatActivity {
         transaction.commit();
         manager.executePendingTransactions();
 
+    }
+
+    public void doRadio(View view) {
     }
 }

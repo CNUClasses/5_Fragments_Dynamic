@@ -2,7 +2,8 @@
 xmlns:tools="http://schemas.android.com/tools"
 android:orientation="vertical"
 android:layout_width="fill_parent"
-android:layout_height="fill_parent">
+android:layout_height="fill_parent"
+    tools:ignore="MissingDefaultResource">
     <FrameLayout
     android:id="@+id/fragment_container1"
     android:layout_width="match_parent"

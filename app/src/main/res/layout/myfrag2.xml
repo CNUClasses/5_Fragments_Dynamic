@@ -17,6 +17,5 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Click button to open settings"
-        android:onClick="doSettings"/>
+        android:text="A useless button" />
 </LinearLayout>
